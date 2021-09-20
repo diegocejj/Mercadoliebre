@@ -3,131 +3,262 @@
 -------------------------------------*/
 * {
     font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
 }
 
 /* -----------------------------------
         Responsive
 -------------------------------------*/
 
-@media screen and (max-width: 980px){
-    #contenedor{
-        width: 90%;
-    }
-    #contenido{
-        width: 60%;
-    }
-    #barra_lateral{
-        width:30%;
-    }
-}
 
-@media screen and (max-width: 480px){
-    #encabezado{
+
+    /* -----------------------------------
+            Selector por etiquetas 
+    -------------------------------------*/
+    html,body{  
+        height: 100%;
+        padding: 0px;
+        margin: 0px; 
+        background-color: #ebebeb;
+        
+    }
+
+    header{ 
+        background-color: #EAC926;
+        background-size: cover;    
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    main{
+        margin:auto;                    /* Centra seccion main */
+        width: 90%;                     /* Ocupa el 90% de la pantalla */
+    }
+
+    nav{
+        text-align: left;
+        font-size: 3vw;
+        border: solid 1px #EAC926;
+        padding: 0px;
+        height: 30vw;
+        margin: 1vw;
+    } 
+
+    img { 
+        max-width: 100%; 
+        width: 100vw;
         height: auto;
+        display: block;
+        margin: auto;
+        border: solid 1px EAC926;
+        padding: 0px;
     }
-    #contenido{
-        width: auto;
+
+    article{
+        background-color: white;
+        padding: 0px;
+        border: solid 1px #ebebeb;
+        margin: 15px;
     }
-    #barra_lateral{
-        display:none;
+
+    article img{
+        width: 100%;
+        height: 100%;
+        border: solid 1px white;
+        padding: 15px;
+        background-color: white;
     }
-}
 
-#contenedor {
-    width: 90%;
-    max-width: 1024px;
-}
+    h2{
+        height: 5vh;
+        width: 88vw;
+        color: #666;
+        font-size: 4vw;
+        padding: 2px;
+        border: solid 1px #ebebeb;
+        padding-left: 10px;
+        margin: 4px; 
+    }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display:block;
-    margin:auto;
-}
+    h3{
+        font-weight: bold;
+        font-weight: bold;
+        font-size: 4vw; 
+        border: solid 1px #ebebeb;
+        padding: 2px;
+        margin: auto;
+        height: auto;
+        width: 100vw;
+    }
 
-/* -----------------------------------
-        Selector por etiquetas 
--------------------------------------*/
-header{ 
-    background-color: #EAC926;
-    background-size: cover;    
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover; 
-}
+    h4{
+        font-size: 2vw;
+        display: inline-block;
+        border: solid 1px #ebebeb;
+        padding: 4px;
+        margin: auto;
+        width: 100vw;
+    }
 
-body{
-    font-size:12px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover; 
-}
+    footer
+    {
+        color: #666;
+        text-align: center;   
+        opacity: 90%;
+    }
 
-h2{
-    font-size: 24px;
-}
+    /* -----------------------------------
+            Selector por clases 
+    -------------------------------------*/
+    .Searchbox{
+        max-width: 100vw;
+        height: 4vh;
+        width: 50vw;
+        text-align: left;
+        font-size: 2vh;
+        border: solid 1px #666;
+        padding: 2px;
+        margin-left: 13px;           
+    }
 
-h3{
-    font-weight: bold;
-}
+    .burger-menu{   
 
-h4{
-    font-size: 10px;
-}
+        background-color: #1259c3;      /* Color de fondo contenido */
+        color:#ebebeb;                  /* Color del icono dentro del contenido */
+        text-align: center;               /* Alineacion del icono dentro del contenido */
+        font-size: 4vw;                   /* Tamaño del icono dentro del contenido */  
+        line-height: 0vw;                /* Cambio la altura del icono dentro del contenido*/
 
-footer
+        width: 9vw;                      /* Ancho del contenido */
+        height: 9vw;                     /* Alto del contenido */  
+        border: solid 1px #1259c3;      /* Linea de borde */
+        border-radius: 3vw;               /* Redondeo borde */  
+        padding: 2vw;                     /* Separacion entre contenido y border */  
+        margin: auto;                     /* Margen del box model, como esta dentro de div -> elemento de bloque => centra a medio de pantalla*/
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .fa-truck{
+        color:green;                    /* Color del icono */
+        font-size: 5vw;                  /* Tamaño del icono */
+    }
+  
+    .fa-credit-card{
+        font-size: 5vw;
+    }
+    .fa-gift{
+        font-size: 5vw;
+    }
+    .fa-user-shield{
+        font-size: 5vw;
+    }
+
+    .cuotas{
+        font-size: 4vw;
+        text-align: left;
+        border: solid 1px #EAC926;
+        margin: 1vw;
+    }
+
+    /* -----------------------------------
+            Selector por descendencia 
+    -------------------------------------*/
+    article .contenedor_articulo
+    {    
+        background-color: white;
+        padding: 15px;                  /* Separacion entre contenido y border */   
+        border: solid 1px #ebebeb;   
+        margin-top: 2px;                   /* Separacion entre articulos de 10px */
+    }
+
+    p.price{
+        text-align: left;
+        font-size: 5vw;
+        border: solid 1px white;
+        margin: auto;
+        padding: 2px;
+    }
+
+    p.discount{
+        font-size: 4vw;
+        text-align: left;
+        border: solid 1px white;
+        margin: auto;
+        padding: 2px;
+        color: green;
+    }
+
+    .description{
+        text-align: left;
+        font-size: 3vw;
+        font-weight: bold;
+        opacity: 90%;
+        color: #666;
+        border: solid 1px white;
+        margin: auto;
+        padding: 2px;
+    } 
+
+    footer i{
+        color: #1259c3;
+        font-size: 2em;
+        margin: 10px;
+    }
+
+    footer section p{
+        font-size: 3vw;
+        text-align: center;
+        border: solid 1px #ebebeb;
+        padding: 2px;
+        margin: auto;
+        height: 100%;
+        width: 87vw;
+    }
+
+/* Media Queries para Tablet */
+@media (min-width: 361px) 
 {
-    color: #666;
-    text-align: center;   
-    opacity: 90%;
+    article{
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
+
+    .burger-menu{
+        display: none;
+    }
+    
+    .cuotas{
+        text-align: center;
+    }
 }
 
-/* -----------------------------------
-        Selector por clases 
--------------------------------------*/
-.Searchbox{
-    max-width: 100%;
-    height: auto;  
-    width: 25%;
-    margin: auto;
+/* Media Queries para Desktop */
+@media (min-width: 769px) 
+{
+    article{
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
+
+    .cuotas{
+        text-align: center;
+    }
+
+    .burger-menu{
+        display: none;
+    }
 }
 
-.burger-menu{
-    background-color: #1259c3;
-    color:#ebebeb;
-    font-size: 2em;
-    padding: 2mm;
-    width: 30px;
-    height: 30px;
-    margin: auto;
-    text-align: center;
+
+/* Media Queries para mobile */
+@media (max-width: 360px) 
+{
+    article .description{
+        display: none;
+    }
+
+    nav{
+        display: none;
+    }
 }
 
-.items li{
-    text-align: left;
-}
-
-/* -----------------------------------
-        Selector por descendencia 
--------------------------------------*/
-p.price{
-    font-size: 18px;
-}
-
-p.discount{
-    font-size: 16px;
-}
-
-.description{
-    font-size: 16px;
-    font-weight: bold;
-    opacity: 90%;
-} 
-
-footer i{
-    color: #1259c3;
-    font-size: 2em;
-    margin: 10px;
-}
