@@ -7,215 +7,213 @@
 }
 
 /* -----------------------------------
-        Responsive
+        Selector por etiquetas 
 -------------------------------------*/
+html,body{  
+    height: 100%;
+    padding: 0px;
+    margin: 0px; 
+    background-color: #ebebeb;
+    
+}
 
+header{ 
+    background-color: #EAC926;
+    background-size: cover;    
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
+main{
+    margin:auto;                    /* Centra seccion main */
+    width: 90%;                     /* Ocupa el 90% de la pantalla */
+}
 
-    /* -----------------------------------
-            Selector por etiquetas 
-    -------------------------------------*/
-    html,body{  
-        height: 100%;
-        padding: 0px;
-        margin: 0px; 
-        background-color: #ebebeb;
-        
-    }
+nav{
+    text-align: left;
+    font-size: 3vw;
+    border: solid 1px #EAC926;
+    padding: 0px;
+    height: 30vw;
+    margin: 1vw;
+} 
 
-    header{ 
-        background-color: #EAC926;
-        background-size: cover;    
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
+img { 
+    max-width: 100%; 
+    width: 100vw;
+    height: auto;
+    display: block;
+    margin: auto;
+    border: solid 1px EAC926;
+    padding: 0px;
+}
 
-    main{
-        margin:auto;                    /* Centra seccion main */
-        width: 90%;                     /* Ocupa el 90% de la pantalla */
-    }
+article{
+    background-color: white;
+    padding: 0px;
+    border: solid 1px #ebebeb;
+    margin: 15px;
+}
 
-    nav{
-        text-align: left;
-        font-size: 3vw;
-        border: solid 1px #EAC926;
-        padding: 0px;
-        height: 30vw;
-        margin: 1vw;
-    } 
+article img{
+    width: 100%;
+    height: 100%;
+    border: solid 1px white;
+    padding: 15px;
+    background-color: white;
+}
 
-    img { 
-        max-width: 100%; 
-        width: 100vw;
-        height: auto;
-        display: block;
-        margin: auto;
-        border: solid 1px EAC926;
-        padding: 0px;
-    }
+h2{
+    height: 5vh;
+    width: 88vw;
+    color: #666;
+    font-size: 4vw;
+    padding: 2px;
+    border: solid 1px #ebebeb;
+    padding-left: 10px;
+    margin: 4px; 
+}
 
-    article{
-        background-color: white;
-        padding: 0px;
-        border: solid 1px #ebebeb;
-        margin: 15px;
-    }
+h3{
+    font-weight: bold;
+    font-weight: bold;
+    font-size: 4vw; 
+    border: solid 1px #ebebeb;
+    padding: 2px;
+    margin: auto;
+    height: auto;
+    width: 100vw;
+}
 
-    article img{
-        width: 100%;
-        height: 100%;
-        border: solid 1px white;
-        padding: 15px;
-        background-color: white;
-    }
+h4{
+    font-size: 2vw;
+    display: inline-block;
+    border: solid 1px #ebebeb;
+    padding: 4px;
+    margin: auto;
+    width: 100vw;
+}
 
-    h2{
-        height: 5vh;
-        width: 88vw;
-        color: #666;
-        font-size: 4vw;
-        padding: 2px;
-        border: solid 1px #ebebeb;
-        padding-left: 10px;
-        margin: 4px; 
-    }
+footer
+{
+    color: #666;
+    text-align: center;   
+    opacity: 90%;
+}
 
-    h3{
-        font-weight: bold;
-        font-weight: bold;
-        font-size: 4vw; 
-        border: solid 1px #ebebeb;
-        padding: 2px;
-        margin: auto;
-        height: auto;
-        width: 100vw;
-    }
+/* -----------------------------------
+        Selector por clases 
+-------------------------------------*/
+.Searchbox{
+    max-width: 100vw;
+    height: 4vh;
+    width: 50vw;
+    text-align: left;
+    font-size: 2vh;
+    border: solid 1px #666;
+    padding: 2px;
+    margin-left: 13px;           
+}
 
-    h4{
-        font-size: 2vw;
-        display: inline-block;
-        border: solid 1px #ebebeb;
-        padding: 4px;
-        margin: auto;
-        width: 100vw;
-    }
+.burger-menu{   
 
-    footer
-    {
-        color: #666;
-        text-align: center;   
-        opacity: 90%;
-    }
+    background-color: #1259c3;      /* Color de fondo contenido */
+    color:#ebebeb;                  /* Color del icono dentro del contenido */
+    text-align: center;               /* Alineacion del icono dentro del contenido */
+    font-size: 4vw;                   /* Tamaño del icono dentro del contenido */  
+    line-height: 0vw;                /* Cambio la altura del icono dentro del contenido*/
 
-    /* -----------------------------------
-            Selector por clases 
-    -------------------------------------*/
-    .Searchbox{
-        max-width: 100vw;
-        height: 4vh;
-        width: 50vw;
-        text-align: left;
-        font-size: 2vh;
-        border: solid 1px #666;
-        padding: 2px;
-        margin-left: 13px;           
-    }
+    width: 9vw;                      /* Ancho del contenido */
+    height: 9vw;                     /* Alto del contenido */  
+    border: solid 1px #1259c3;      /* Linea de borde */
+    border-radius: 3vw;               /* Redondeo borde */  
+    padding: 2vw;                     /* Separacion entre contenido y border */  
+    margin: auto;                     /* Margen del box model, como esta dentro de div -> elemento de bloque => centra a medio de pantalla*/
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 
-    .burger-menu{   
+.fa-truck{
+    color:green;                    /* Color del icono */
+    font-size: 5vw;                  /* Tamaño del icono */
+}
 
-        background-color: #1259c3;      /* Color de fondo contenido */
-        color:#ebebeb;                  /* Color del icono dentro del contenido */
-        text-align: center;               /* Alineacion del icono dentro del contenido */
-        font-size: 4vw;                   /* Tamaño del icono dentro del contenido */  
-        line-height: 0vw;                /* Cambio la altura del icono dentro del contenido*/
+.fa-credit-card{
+    font-size: 5vw;
+}
+.fa-gift{
+    font-size: 5vw;
+}
+.fa-user-shield{
+    font-size: 5vw;
+}
 
-        width: 9vw;                      /* Ancho del contenido */
-        height: 9vw;                     /* Alto del contenido */  
-        border: solid 1px #1259c3;      /* Linea de borde */
-        border-radius: 3vw;               /* Redondeo borde */  
-        padding: 2vw;                     /* Separacion entre contenido y border */  
-        margin: auto;                     /* Margen del box model, como esta dentro de div -> elemento de bloque => centra a medio de pantalla*/
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
+.cuotas{
+    font-size: 4vw;
+    text-align: left;
+    border: solid 1px #EAC926;
+    margin: 1vw;
+}
 
-    .fa-truck{
-        color:green;                    /* Color del icono */
-        font-size: 5vw;                  /* Tamaño del icono */
-    }
-  
-    .fa-credit-card{
-        font-size: 5vw;
-    }
-    .fa-gift{
-        font-size: 5vw;
-    }
-    .fa-user-shield{
-        font-size: 5vw;
-    }
+/* -----------------------------------
+        Selector por descendencia 
+-------------------------------------*/
+article .contenedor_articulo
+{    
+    background-color: white;
+    padding: 15px;                  /* Separacion entre contenido y border */   
+    border: solid 1px #ebebeb;   
+    margin-top: 2px;                   /* Separacion entre articulos de 10px */
+}
 
-    .cuotas{
-        font-size: 4vw;
-        text-align: left;
-        border: solid 1px #EAC926;
-        margin: 1vw;
-    }
+p.price{
+    text-align: left;
+    font-size: 5vw;
+    border: solid 1px white;
+    margin: auto;
+    padding: 2px;
+}
 
-    /* -----------------------------------
-            Selector por descendencia 
-    -------------------------------------*/
-    article .contenedor_articulo
-    {    
-        background-color: white;
-        padding: 15px;                  /* Separacion entre contenido y border */   
-        border: solid 1px #ebebeb;   
-        margin-top: 2px;                   /* Separacion entre articulos de 10px */
-    }
+p.discount{
+    font-size: 4vw;
+    text-align: left;
+    border: solid 1px white;
+    margin: auto;
+    padding: 2px;
+    color: green;
+}
 
-    p.price{
-        text-align: left;
-        font-size: 5vw;
-        border: solid 1px white;
-        margin: auto;
-        padding: 2px;
-    }
+.description{
+    text-align: left;
+    font-size: 3vw;
+    font-weight: bold;
+    opacity: 90%;
+    color: #666;
+    border: solid 1px white;
+    margin: auto;
+    padding: 2px;
+} 
 
-    p.discount{
-        font-size: 4vw;
-        text-align: left;
-        border: solid 1px white;
-        margin: auto;
-        padding: 2px;
-        color: green;
-    }
+footer i{
+    color: #1259c3;
+    font-size: 2em;
+    margin: 10px;
+}
 
-    .description{
-        text-align: left;
-        font-size: 3vw;
-        font-weight: bold;
-        opacity: 90%;
-        color: #666;
-        border: solid 1px white;
-        margin: auto;
-        padding: 2px;
-    } 
+footer section p{
+    font-size: 3vw;
+    text-align: center;
+    border: solid 1px #ebebeb;
+    padding: 2px;
+    margin: auto;
+    height: 100%;
+    width: 87vw;
+}
 
-    footer i{
-        color: #1259c3;
-        font-size: 2em;
-        margin: 10px;
-    }
-
-    footer section p{
-        font-size: 3vw;
-        text-align: center;
-        border: solid 1px #ebebeb;
-        padding: 2px;
-        margin: auto;
-        height: 100%;
-        width: 87vw;
-    }
+/* -----------------------------------
+                Responsive
+-------------------------------------*/
 
 /* Media Queries para Tablet */
 @media (min-width: 361px) 

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Bienvenidos a MercadoLiebre </title>
+
+        <!--Page configuration-->
+        <meta charset="UTF-8">
+        
+        <!--Mobile first Responsive method-->
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Link source roboto -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+
+        <!-- Add Styles CSS local-->
+        <link rel="stylesheet" href="css/styles.css">
+
+        <!-- Add icons -->
+        <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+      
+    </head>
+
+    <body>
+        <header> 
+
+            <!--Logo mercadolibre-->
+            <div>
+                <img src="\images\logo-mercado-liebre.svg" alt= "logo"/>
+            </div> 
+            
+            <!--Barra de busqueda-->
+            <div class = "search">
+                <input class="Searchbox" placeholder="Buscar productor, marcas y más...">
+                <i class="fas fa-search"></i>
+            </div>
+            
+            <p class = cuotas>
+                <i class="fas fa-hand-holding-usd"></i>
+                Comprá en cuotas y sin tarjeta de crédito
+            </p>        
+            
+             <!--Navigation link-->
+            <nav>  
+                <!--Unordered list of items-->
+                <ul class="items" type="none">
+                    <!--Items-->
+                    <li><a href=""> Ofertas</a></li> 
+                    <li><a href=""> Tiendas Oficiales</a></li> 
+                    <li><a href=""> Vender</a></li> 
+                    <li><a href=""> Ayuda</a></li> 
+                    <li><a href=""> Creá tu cuenta
+                        <i class="fas fa-address-card"></i>
+                    </a></li> 
+                    <li><a href=""> Ingresá
+                        <i class="fas fa-sign-in-alt"></i>
+                    </a></li> 
+                    <li><a href=""> Mis compras
+                        <i class="fas fa-shopping-basket"></i>
+                    </a></li> 
+                </ul>
+            </nav>
+           
+
+            <!--Hamburgesa icon-->
+            <div class="burger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <!--Imagen de banner-->
+            <div>
+                <img src="\images\img-home-banner.jpg" alt= "Banner"/>
+            </div>
+
+        </header>
+
+        <main>
+
+            <!--Formulario-->
+            <form action="/register" method="POST">
+                <div> 
+                    <input type="text" name="name" id="cliente" placeholder="Nombre y apellido"> </input>
+                </div>
+                <div>
+                    <input type="text" name="user" id="usuario" placeholder="Nombre de usuario"> </input>
+                </div>
+                <div> 
+                    <input type="text" name="birthday" id="cumpleaños" placeholder="Fecha de nacimiento"> </input>
+                </div>
+                <div>
+                    <input type="text" name="address" id="direccion" placeholder="Domicilio"> </input>
+                </div>
+                <div>
+                    <!--Checkbox-->
+                    <label type="text">Perfil de usuario</label>
+                    <select name="profile">
+                        <option value="vendedor"> vendedor </option>
+                        <option value="coprador"> comprador </option>
+                    </select>
+                </div>
+                <div>
+                    <!--Checkbox-->
+                    <label type="text">Categoria de interes</label>
+                    <select name="profile">
+                        <option value="Electro"> Electro </option>
+                        <option value="Moda"> Moda </option>
+                        <option value="Hogar"> Hogar </option>
+                        <option value="Jugeteria"> Jugeteria </option>
+                        <option value="Vida sana"> Vida sana </option>
+                    </select>
+                </div>
+
+                <div>
+                    <!--Contraseña-->
+                    <input type="password" name="clave" id="clave" maxlength=10 placeholder="Contraseña">
+                </div>
+                
+                <div>
+                    <!--Confirmar contraseña-->
+                    <input type="password" name="clave" id="confirmclave" maxlength=10 placeholder="Confirmar contraseña">
+                </div>
+
+                <div>
+                    <input type="file"></input>
+                </div>
+
+                <button type=submit>Registrar</button>
+                <button type=reset>Borrar formulario</button>
+
+            </form>
+
+        </main>    
+
+        <footer>
+            <section>
+                <i class="fas fa-credit-card"></i>
+                <h3>Pagá con tarjeta o en efectivo</h3>
+                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                    puntos de pago. ¡Y siempre es seguro!</p>
+            </section>
+            <section>
+                <i class="fas fa-gift"></i>
+                <h3>Envío gratis desde los $2.500</h3>
+                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                    productos. Es un beneficio de Mercado Puntos.</p>
+            </section>
+            <section>
+                <i class="fas fa-user-shield"></i>
+                <h3>Seguridad, de principio a fin</h3>
+                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                    porque estás siempre protegid@.</p>
+            </section>
+            <section>
+                <h4>Copyright © 1999-2020 MercadoLiebre S.R.L.</h4>
+            </section>
+        </footer>
+    </body>
+
+</html>
