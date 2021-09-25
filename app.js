@@ -18,6 +18,12 @@ app.get('/register',(req,res) => {
     res.sendFile(fileToSend);
 });
 
+app.get('/login',(req,res) => {
+    //ruta de archivo
+    const fileToSend = path.join(__dirname, "/views/login.html");
+    res.sendFile(fileToSend);
+} )
+
 /*
 // Redirecciono a la pagina principal
 app.post('/register',(req,res) => {
