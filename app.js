@@ -24,6 +24,8 @@ app.get('/login',(req,res) => {
     res.sendFile(fileToSend);
 } )
 
+
+
 /*
 // Redirecciono a la pagina principal
 app.post('/register',(req,res) => {
@@ -38,3 +40,5 @@ app.listen(3030, () => {
         "http://localhost:3030/"
         );
 });
+
+

@@ -97,7 +97,7 @@ main section article .description{
 }
 
 main article .contenedor_articulo .box-price-discount{
-    border: solid 1px black;
+    margin: 10px 0px 10px 0px;
     display: flex;
 }
 
@@ -146,12 +146,14 @@ main section article i{
     border-radius: 50%;
     position: absolute;
     right: 20px;
-    top: -15px;
+    top: 90vw;
+    /* top: -15px; */
 }
 
 main section article{
     background-color: #fff;    
     margin: 10px 0px;
+    position: relative;
 }
 
 .product-img{
@@ -180,13 +182,6 @@ main section article{
 /* -----------------------------------------*/
 /*          Cabecera principal top          */
 /* -----------------------------------------*/
-/* .header-top{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}  */
-
 /* Contenedor del logo */
 .header-top .logo{
     text-align: center;         /* Centro logo ML dentro del contenedor */
@@ -196,6 +191,77 @@ main section article{
 /* logo ML */
 .header-top .logo .logoML{
     width: 50%;                 /* El logo va a tener un 50% del tamaño de su contenedor */
+}
+
+
+/* ***************************** */
+/* Login SECTION */
+.login-form{
+    margin: auto;
+    padding: 20px;
+}
+
+.login-field{
+    width: 70%;
+    margin: 1rem;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.enviar-form{
+    background-color: #1259C3;
+    color: #ebebeb;
+}
+/* ***************************** */
+/* Register section */
+.register-form{
+    margin: auto;
+    padding: 20px;
+}
+
+.register-field{
+    width: 70%;
+    margin: 1rem;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.checkbox-field
+{
+    width: 30%;
+    margin: 1rem;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.text-checkbox-field
+{
+    text-align: left;
+    margin: auto; 
+    padding-right: 1rem;
+}
+
+.text-checkbox-profile-field{
+    padding-right: 2.2rem;
+}
+
+
+.register-field-image-text{
+    text-align: left;
+    margin: auto;
+}
+
+.button-register{
+    width: 33.5%;
+    margin: 1rem;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background: #1259C3;
+    color: #ebebeb;
 }
 
 /* ---------------------------------------------------------------- */
@@ -238,10 +304,6 @@ main section article{
         right: 17px;
     }
 
-    
-   
-
-
     nav{
         display:none;
     }
@@ -252,9 +314,7 @@ main section article{
     }
     */
 
-    main section article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
+    
 
 
     /*
@@ -272,6 +332,14 @@ main section article{
 /* Media querie tablet */
 @media (min-width:767px)
 {       
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section article i{
+        top: 40.5vw;
+    }
+
      /* Barra de busqueda con el ico incrustado */
      .header-top{
         display: flex; 
@@ -370,4 +438,13 @@ main section article{
         justify-content: space-between;
         align-items: stretch;
     }
+
+    main section article i{
+        top: 20.5vw;
+    }
+    
+    .searchbox{
+        width: 25vw;
+    }
+
 }
