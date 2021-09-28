@@ -20,14 +20,14 @@ header{
 
 header .cuotas{
     text-align: center;
-    border: solid 1px black;
+    /* border: solid 1px black; */
     margin: auto;
     
 }
 
 nav{
     display: none;
-    border: solid 1px black;
+    /* border: solid 1px black; */
     padding: 1px;
     margin: auto;
 }
@@ -36,21 +36,21 @@ header div .banner{
     display: block;
     width: 100vw;
     padding: 1px;
-    border: solid 1px black;
+    /* border: solid 1px black; */
     margin: auto;
 }
 
 main{
     text-align: center;
     width: 90vw;
-    border: solid 1px black;
+    /* border: solid 1px black; */
     margin: 0 auto;
 }
 
 main section article{
     background-color: white;
     text-align: center; 
-    border: solid 1px black;
+    /* border: solid 1px black; */
     padding: 1px; 
 
     margin: 10px 0px;
@@ -67,7 +67,8 @@ main article .contenedor_articulo{
 main h2{
     font-size: 24px;
     text-align: left;
-    border: solid 1px black;
+    color: #666;
+    /* border: solid 1px black; */
     padding: 1px;
     margin: auto;
 }
@@ -92,7 +93,6 @@ main section article .description{
     /* display: none; */
     color:#666;
     font-size: 16px;
-
     margin-top: 10px;
 }
 
@@ -163,7 +163,7 @@ main section article{
 .ofertas,.tiendas,.vender,.ayuda
 {
     padding: 5px; 
-    border: solid 1px black;
+    /* border: solid 1px black; */
     text-align: center;
     font-size: 10px;
     margin-right: 10px;
@@ -173,10 +173,10 @@ main section article{
 .register,.login,.compras
 {
     padding: 5px; 
-    border: solid 1px black;
-        text-align: center;
-        font-size: 10px;
-        margin-left: 10px;
+    /* border: solid 1px black; */
+    text-align: center;
+    font-size: 10px;
+    margin-left: 10px;
 }
 
 /* -----------------------------------------*/
@@ -213,6 +213,11 @@ main section article{
     background-color: #1259C3;
     color: #ebebeb;
 }
+
+.enviar-form:hover{
+    background-color: #02a;
+}
+
 /* ***************************** */
 /* Register section */
 .register-form{
@@ -268,7 +273,9 @@ main section article{
                         /* MEDIA QUERIES */
 /* ---------------------------------------------------------------- */
 /* Caso mobile */
-@media (max-width: 426px)
+/* @media (max-width: 426px)*/
+
+@media (max-width: 767px)
 {
    /* Barra de busqueda con el ico incrustado */
     .header-top 
@@ -307,32 +314,48 @@ main section article{
     nav{
         display:none;
     }
-
-    /*
-    main section article .description{
-        display: block;
-    }
-    */
-
-    
-
-
-    /*
-    main section div.products article{
-        width: 45%;
-    }
-
-    .price,
-    .discount{
-        width: 50%;
-    }
-    */
 }
 
 /* Media querie tablet */
 @media (min-width:767px)
-{       
-    main section article{
+{      
+
+    main section article .description{
+        bottom: 33px;
+        position: absolute;
+        z-index: -1;
+        opacity:0;
+    }
+
+    .contenedor_articulo:hover .description{
+        bottom: 0px;
+        position: relative;
+        z-index: 1;
+        opacity: 1;
+    }
+
+    .description{
+        transition:bottom 1s;        
+    }
+
+
+    .truck{
+        transform: rotate(0deg);
+    }
+
+    .truck:hover{
+        transform: rotate(-90deg);
+    }
+
+    .truck{
+        transition: transform 1s;
+    }
+
+
+
+
+    
+    main section article:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
@@ -377,11 +400,11 @@ main section article{
     main section article{
         background-color: white;
         text-align: center; 
-        border: solid 1px black;
+        /* border: solid 1px black; */
         padding: 1px; 
         width: 45%;
         margin: 10px 0px;
-}
+    }
 
 
     nav {
@@ -396,6 +419,7 @@ main section article{
         width: 40vw;
         flex-wrap: nowrap;
         justify-content: flex-start;
+        padding-left: 2vw;
     }
 
     nav .items2{
@@ -403,6 +427,7 @@ main section article{
         width: 40vw;
         flex-wrap: nowrap;
         justify-content: flex-end;
+        padding-right: 2vw;
     }
 
     nav .items{
@@ -432,6 +457,8 @@ main section article{
 /* Media querie para desktop */
 @media (min-width:1023px)
 {
+
+
     main section div.articulos, main section div.oferta{
         display: flex;
         flex-direction: row;
@@ -445,6 +472,44 @@ main section article{
     
     .searchbox{
         width: 25vw;
+    }
+
+    .footer-text{
+        display: flex;
+        font-size: inherit;
+        align-items: center;
+        justify-content: space-around;
+        align-content: center;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+
+    footer i.credit:hover{
+        font-size: 40px;
+        color: #02a;
+    }
+
+    footer i.user-shield:hover{
+        font-size: 40px;
+        color: #02a;
+    }
+
+    footer i.gift:hover{
+        font-size: 40px;
+        color: #02a;
+    }
+
+    footer i.credit:hover{
+        transition: font-size 1s;
+    }
+
+    footer i.user-shield:hover{
+        transition: font-size 1s;
+    }
+
+    footer i.gift:hover{
+        transition: font-size 1s;
     }
 
 }
