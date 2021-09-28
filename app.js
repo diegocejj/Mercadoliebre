@@ -24,21 +24,15 @@ app.get('/login',(req,res) => {
     res.sendFile(fileToSend);
 } )
 
+app.listen(process.env.PORT || 3000,function(){
+    console.log("Servidor corriendo en el puerto 3000");
+})
 
-
-/*
-// Redirecciono a la pagina principal
-app.post('/register',(req,res) => {
-    // ruta del archivo
-    res.redirect("/"));
-});
-*/
-
-app.listen(3030, () => {
-    console.log(
-        "Servidor web corriendo en la direccion",
-        "http://localhost:3030/"
-        );
-});
+// app.listen(3030, () => {
+//     console.log(
+//         "Servidor web corriendo en la direccion",
+//         "http://localhost:3030/"
+//         );
+// });
 
 
